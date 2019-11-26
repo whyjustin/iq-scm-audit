@@ -12,6 +12,15 @@ source code repositories and for each repository:
 - Download and evaluate policy against latest GitHub Packages assets
 - Create GitHub Issue in repository with results and hints on how to configure CI tools
 
+#### Setup
+
+IQ SCM Audit works best when:
+
+- The GitHub repositories' [Dependency Graphs](https://help.github.com/en/github/visualizing-repository-data-with-graphs/listing-the-packages-that-a-repository-depends-on#enabling-the-dependency-graph-for-a-private-repository) are enabled.
+- The GitHub repositories have at least one [Release](https://help.github.com/en/github/administering-a-repository/creating-releases) or [Package](https://help.github.com/en/github/managing-packages-with-github-packages/publishing-a-package) with evaluatable assets.
+- The JVM is installed to run a policy evaluation using the CLI. Note that if the JVM is not installed you must set
+skipIQEvaluations to true and there is no need to have a GitHub Release or Package.
+
 #### Usage
 
 ```
